@@ -1,6 +1,6 @@
 document.write(" \
     <a href='/'> home </a> \
-    <a href='/page3.html'> blog </a> \
-    <a href='/page1.html'> about </a> \
-    <a href='/page2.html'> contact </a> \
+    <a href='/blog/'> blog </a> \
+    <a href='/about.html'> about </a> \
+    <a href='/contact.html'> contact </a> \
 ");
