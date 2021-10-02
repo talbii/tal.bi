@@ -19,7 +19,7 @@ a {
     font-style: italic;
 }
 
-a.navlink:hover {
+a:hover {
     color: snow;
 }
 
