@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    <style>
+        div.main {
+            grid-column: 2; 
+            grid-row: 1 / 3;
+            padding-left: 5vh;
+        }
+
+        div.grid {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            grid-template-rows: repeat(1fr, 3);
+        }
+
+        img {
+            filter: invert(99%) sepia(7%) saturate(1660%) hue-rotate(176deg) brightness(77%) contrast(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="contact center">
+        <h1 style="margin: auto 0 0 auto;">Contact Me</h1>
+        <div class="contact main">
+            <p> You can reach me in the following ways: </p>
+            <div class="contact grid">
+                <img src="/icons/mail.svg"
+                     alt="mail icon" height=100%>
+                <a href="mailto:contact@tal.bi">contact@tal.bi</a>
+
+                <img src="/icons/github.svg"
+                     alt="mail icon" height=100%>
+                <a href="https://github.com/talbii">talbii</a>
+
+                <img src="/icons/twitter.svg"
+                     alt="mail icon" height=100%>
+                <a href="https://twitter.com/talbiunderscore">@talbiunderscore</a>
+            </div>
+        </div>
+
+
+        <div class="contact nav">
+            <script src="nav.js"></script>
+        </div>
+    </div>
+</body>
+</html>
