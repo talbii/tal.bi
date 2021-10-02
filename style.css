@@ -23,6 +23,19 @@ a:hover {
     color: snow;
 }
 
+div.center {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.nav {
+    margin: 0 0 auto auto;
+}
+
 h1, h2, h3, h4, h5, h6, p, a, span {
     font-family: 'Roboto', Helvetica, sans-serif;
     color: var(--text-color);
