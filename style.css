@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&display=swap'); /*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap'); /*Roboto Mono*/
+
+body, html {
+    margin: 0.5vh;
+    background-color: var(--background-color);
+}
+
+:root {
+    --background-color: rgb(32, 33, 36);
+    --text-color: rgb(189, 193, 198);
+    --link-hover: snow;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    font-style: italic;
+}
+
+a.navlink:hover {
+    color: snow;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+h4, h5, h6 {
+    font-weight: 500;
+}
+
+p, span {
+    font-weight: 400;
+}
+

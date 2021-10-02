@@ -1,0 +1,37 @@
+div.center .bottom {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+div.center div.left h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .5em solid var(--text-color); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em; /* Adjust as needed */
+    animation: 
+        typewriter 1.3s steps(14) 1s 1 normal both,
+        blink-caret .75s step-end infinite;
+
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    margin: 1vh 0;
+}
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 100%;}
+  }
+@keyframes blink-caret{
+    from, to {border-color: transparent}
+    50% { border-color: var(--text-color)}
+}
+
+div.center {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
