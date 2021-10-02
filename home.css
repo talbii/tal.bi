@@ -1,6 +1,9 @@
 div.center .bottom {
     grid-column-start: 1;
     grid-column-end: 3;
+    animation:
+        appear 0.5s linear 1.8s 1 normal forwards;
+    opacity: 0;
 }
 
 div.center div.left h1 {
@@ -25,6 +28,11 @@ div.center div.left h1 {
 @keyframes blink-caret{
     from, to {border-color: transparent}
     50% { border-color: var(--text-color)}
+}
+
+@keyframes appear {
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 
 div.center {
