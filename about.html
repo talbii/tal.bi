@@ -7,19 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <title>About</title>
     <style>
-        p {
+        .about div.box {
             grid-column: 2; 
             grid-row: 1 / 3;
             padding-left: 5vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        p {
+            margin: 2vh 0;
         }
     </style>
 </head>
 <body>
     <div class="about center">
         <h1 style="margin: auto 0 0 auto;">About Me</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat quas ad reiciendis, eum necessitatibus eos asperiores impedit laborum possimus ut vitae modi voluptas nam unde provident consectetur harum reprehenderit dicta, tempore magnam fugit praesentium. Facere facilis, delectus, architecto incidunt porro inventore ratione explicabo minus doloribus reprehenderit voluptates rerum mollitia quisquam deleniti reiciendis officiis voluptas enim autem! Quod iste doloribus quidem nemo consequuntur, doloremque molestiae eos neque esse magni at iusto blanditiis maxime sequi repudiandae, deleniti nobis fugiat ea, illum itaque? Cum, consequatur unde beatae asperiores exercitationem fuga ullam, laboriosam recusandae iusto molestiae non! Aliquam veniam suscipit culpa quaerat fugiat.
-        </p>
+        <div class="about box">
+            <p>
+                Hi! My name is <em>Ido Talbi</em>, and currently I am a student in University of Haifa, studying Computer Science.
+            </p>
+            <p>
+                In my spare time I enjoy contributing in 
+                    <a href="https://math.stackexchange.com/users/655052/talbi">Mathematics SE</a>,
+                and also <a href="https://github.com/talbii"> some programming </a>. <em>Side note: </em> I despise OOP.
+            </p>
+            <p>
+                I am mainly interested in countless branches of Mathematics, such as Calculus and Number Theory, 
+                    and also some Computer Science stuff, like Compilers and Data Structures. 
+            </p>
+
+            <p>
+                In my blog, which I hope to update frequently, you will find semi-articles in which I talk 
+                    about stuff that I find interesting - I hope you will too!
+            </p>
+
+        </div>
         <div class="about nav">
             <script src="nav.js"></script>
         </div>
