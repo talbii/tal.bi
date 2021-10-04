@@ -16,11 +16,12 @@
         div.grid {
             display: grid;
             grid-template-columns: 30px 1fr;
-            grid-template-rows: repeat(1fr, 3);
+            grid-template-rows: repeat(3, 1fr);
         }
 
         img {
             filter: invert(99%) sepia(7%) saturate(1660%) hue-rotate(176deg) brightness(77%) contrast(100%);
+            height: 19px;
         }
     </style>
 </head>
@@ -31,15 +32,15 @@
             <p> You can reach me in the following ways: </p>
             <div class="contact grid">
                 <img src="/icons/mail.svg"
-                     alt="mail icon" height=100%>
+                     alt="mail icon">
                 <a href="mailto:contact@tal.bi">contact@tal.bi</a>
 
                 <img src="/icons/github.svg"
-                     alt="github icon" height=100%>
+                     alt="github icon">
                 <a href="https://github.com/talbii">talbii</a>
 
                 <img src="/icons/twitter.svg"
-                     alt="twitter icon" height=100%>
+                     alt="twitter icon">
                 <a href="https://twitter.com/talbiunderscore">@talbiunderscore</a>
             </div>
         </div>
