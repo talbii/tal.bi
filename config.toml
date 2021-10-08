@@ -1,0 +1,49 @@
+baseURL = 'https://blog.tal.bi/'
+languageCode = 'en-us'
+title = "Talbi's Blog"
+theme = "anubis"
+paginate = 10
+
+# disqusShortname
+# googleAnalytics
+
+[author]
+name = "Ido Talbi"
+
+[params]
+author = "Ido Talbi"
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+style = "auto"
+readMore = true
+
+# utteranc.es support. TODO
+utterancesRepo = ""  # mandatory
+utterancesTheme = "" # optional
+utterancesIssue = "" # optional
+utterancesLabel = "" # optional
+
+#[[params.social]]
+#id = "github"
+#url = "https://github.com/talbii"
+
+[menu]
+
+[[menu.main]]
+identifier = "posts"
+name = "All Posts"
+url = "/posts/"
+weight = 1
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 2
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true
