@@ -1,10 +1,11 @@
 ---
 author: talbi
 date: 2021-10-05
+title: Development on an iPad
 tags: ["ipad"]
 ---
 
-Everything I use to make programming (semi) doable on my iPad.
+everything I use to make programming (semi) doable on my iPad.
 <!--more-->
 
 ## Preface
