@@ -85,7 +85,7 @@ I believe, the best solution, is to use a *local* exception variable (and pass i
 
 ```c
 union Exception {
-    enum { Ok = 0, }; /*The base "no exception" value*/
+    enum { Ok = 0, } Ok; /*The base "no exception" value*/
     enum {
         Overflow = 1, /*note we must begin with 1, otherwise Ok == Overflow. */
         Underflow,
