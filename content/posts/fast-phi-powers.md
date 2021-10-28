@@ -71,7 +71,7 @@ And a lovely graph:
 
 ![image: Graph of the results listed](graph.png)
 
-Of course, these results should be taken with a grain of salt, as it is only one example on my machine and will vary between CPUs. But, overall our hypothesis has been confirmed - using the lemma does yield to faster calculations. How useful is this - is up to you.
+Of course, these results should be taken with a grain of salt, as it is only one example on my machine and will vary between CPUs. But, overall our hypothesis has been confirmed - using the lemma does yield to faster calculations. How useful is this - is up to you. Note, that this also lines up with our expectation. For small $n$, using `lemma_power` is *slower* because of the overhead of calculating the Fibonacci numbers, but as $n$ gets larger this overhead becomes insignificant compared to the calculation itself.
 
 I should also note that getting these results was a surprisingly difficult task, as it appears that multiplication of floating points on modern CPUs is pretty fast.
 
