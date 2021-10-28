@@ -17,11 +17,11 @@ paginationSinglePost = true
 style = "auto"
 readMore = false
 
-# utteranc.es support. TODO
-utterancesRepo = ""  # mandatory
-utterancesTheme = "" # optional
-utterancesIssue = "" # optional
-utterancesLabel = "" # optional
+# utteranc.es support.
+utterancesRepo = "talbii/tal.bi"  # mandatory
+utterancesTheme = "github-dark" # optional
+utterancesIssue = "url" # optional
+utterancesLabel = "blog-comments" # optional
 
 #[[params.social]]
 #id = "github"
