@@ -45,17 +45,6 @@ double regular_power(unsigned int exponent) {
     return program.phi * regular_power(exponent - 1);
 }
 
-double _smart_power(double res, unsigned int exponent) {
-    if(exponent == 0) {
-        return 1;
-    }
-    if (exponent % 2 == 0) {
-        return _smart_power(res*res, exponent/2);
-    } else {
-        return res * _smart_power(res*res, exponent/2);
-    }
-}
-
 double smart_power(unsigned int exponent) {
     if(exponent == 1) return program.phi;
     double res = smart_power(exponent/2);
