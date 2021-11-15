@@ -148,6 +148,6 @@ int caller() {
   - can cause bugs if one forgets to initialize `enum`s with `= 1`
   - may be redundant for functions that will only return one type of exception, and in general functions that only error out in few ways
 
-While this solution is (probably) the best way to get OOP-like exceptions in C, it defiantly isn't the most convenient, and in my projects I'd usually use a combination of solutions (3) and (4). (create *local* exceptions, but without a union)
+While this solution is (probably) the best way to get OOP-like exceptions in C, it definitely isn't the most convenient, and in my projects I'd usually use a combination of solutions (3) and (4). (create *local* exceptions, but without a union)
 
 *Tip:* to write better code, I'd recommend splitting your project into sub-projects ("partitioning" it), and in each part deploy a different exception system. For example, if one part of your code deals with getting file input from the user, then for that singular part create a unified `enum FileException`, which (in the context of that single partition) will make sense.

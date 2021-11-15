@@ -4,7 +4,10 @@
 
 #define MAX_POWER 40
 #define fptr(NAME, RETURN_TYPE, ...) RETURN_TYPE (*NAME)(__VA_ARGS__)
-#define LOOP(func) for(unsigned int i = 2; i < MAX_POWER; i++) log_time(i, &func)
+#define TEST_FUNC(func) do {                                            \
+        puts(##func);                                                   \
+        for(unsigned int i = 2; i < MAX_POWER; i++) log_time(i, &func)  \
+    while(0)                                                        
 
 typedef unsigned long long ull;
 
@@ -29,15 +32,9 @@ int main(void) {
     program.phi = (1 + sqrt(5))/2.0;
 
 
-    puts("Regular power:");
-    LOOP(regular_power);
-
-    puts("Smart power:");
-    LOOP(smart_power);
-
-    puts("Lemma power:");
-    LOOP(lemma_power);
-
+    TEST_FUNC(regular_power);
+    TEST_FUNC(smart_power);
+    TEST_FUNC(lemma_power);
 }
 
 double regular_power(unsigned int exponent) {
@@ -59,7 +56,7 @@ double lemma_power(unsigned int exponent) {
     return get_fib(exponent - 1) * program.phi + get_fib(exponent - 2);
 }
 
-unsigned int get_fib(unsigned int i) {
+ull get_fib(unsigned int i) {
     if(i <= program.current_index) return program.fibonacci_numbers[i];
     
     ull a = program.fibonacci_numbers[program.current_index - 1],
