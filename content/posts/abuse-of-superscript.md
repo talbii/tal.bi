@@ -44,5 +44,6 @@ It seems very funny, to me, that this is just an accepted thing. Many high-schoo
 - Thankfully, only the trigonometric functions suffer the issue with ${}^{-1}$. The expression $\ln^{-1} x$ is very clear.
 - Derivatives are intuitive: When you raise the derivative (operator) to a power $n$ --- $\partial^n$, it means that you are taking it $n$ times! ...and not raising the *derivative* to $n$, obviously.
 - Set theory, which is the best theory, agrees that the superscript should be reserved to mean *power of*, so $A^n$ means $A \times A \times \underbrace{\ldots}_{n-3 \text{ times}} \times A$, and so $A^B$ means... ugh.
+- Another Set theory one: while I (and many more, I hope) use $\mathcal P$ to denote a *Power set*, I've seen some use $2^A$ to denote a Power set, which I believe is the worst notation, ever (what is a scalar raised to a set??)
 
-*a never ending list.* Last updated: November 16th, 2021.
+*a never ending list.* Last updated: November 26th, 2021.
