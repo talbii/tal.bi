@@ -32,9 +32,9 @@ Here's how that looks:
 #include <stdlib.h> /*we must include these before initializing our namespace*/
 
 struct {
-    fptr(FILE*, fopen, const char restrict*, const char restrict*);
-    fptr(void, fclose, FILE*);
-    fptr(int, fprintf, FILE restrict*, const char *restrict, ...);
+    fptr(FILE*, fopen, const char *restrict, const char *restrict);
+    fptr(int, fclose, FILE*);
+    fptr(int, fprintf, FILE *restrict, const char *restrict, ...);
     fptr(int, printf, const char *restrict, ...);
     fptr(int, puts, const char*);
     fptr(void*, malloc, size_t);
