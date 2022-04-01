@@ -24,6 +24,8 @@ swap(a, b); /*C22 projected*/
 swap(get_ref(a), get_ref(b)); /*partial implementation*/
 ```
 
+You may check a working example [here](https://github.com/talbii/tal.bi/blob/blog/content/posts/new-C22-features/reference.c). Note, you need to download both the source file and the included header file(s).
+
 ## Function Annotation
 
 Another exciting feature is function annotations, which actually perform static checking.
