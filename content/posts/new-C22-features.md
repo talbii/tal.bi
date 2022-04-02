@@ -40,7 +40,7 @@ so, calling `do_stuff(0, NULL)` will result in a compilation error.
 
 ## Two-Variable Assertion
 
-C22 adds a new macro: `assert2(MSG, COND)` which allows proper asserting with a message. For reference, today one would use the comma operator to do this: `assert("testing", i > 0)`, however the message would not be printed on failure. In contrast, `assert2` will print message when assertion fails, which is an improvement as it reduces abuse of the comma operator.
+C22 adds a new macro: `assert2(MSG, COND)` which allows proper asserting with a message. For reference, today one would use the comma operator to do this: `assert(("testing", i > 0))`, however the message would not be printed on failure. In contrast, `assert2` will print message when assertion fails, which is an improvement as it reduces abuse of the comma operator.
 
 An example of using `assert2`:
 
