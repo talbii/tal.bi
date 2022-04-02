@@ -128,5 +128,5 @@ It is apparent that C22 wishes to remove as much keywords as possible, to allow 
 
 C22 also decides to remove `malloc` and similar functions (`realloc`, `calloc`, etc.). It does not add the `new` operator like C++. However, C22 does not remove the `free` function. The rational for this is simple - programs written before C22 have used `malloc` once or twice, and in order to avoid memory leaks C22 keeps `free` a valid function such that you can free the memory allocated before it. 
 
-One might think: 'how come will I be able to implement some things which require `malloc`?' (e.g. buffers for error messages) - well, C22 recommends using the VLA ([Variable Length Arrays](/posts/VLAs-in-c)) feature for things like that.
+One might think: 'how come will I be able to implement some things which require `malloc`?' (e.g. buffers for error messages) - well, C22 recommends using the VLA ([Variable Length Arrays](/posts/vlas-in-c)) feature for things like that.
 
