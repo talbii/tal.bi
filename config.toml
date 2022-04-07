@@ -52,6 +52,3 @@ tag = "tags"
 
 [markup.goldmark.renderer]
 unsafe = true
-
-[markup.highlight]
-style = "base16-snazzy"
