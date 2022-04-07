@@ -27,10 +27,10 @@ utterancesLabel = "blog-comments" # optional
 #id = "github"
 #url = "https://github.com/talbii"
 
-[sitemap]
-changefreq = "weekly"
-filename = "sitemap.xml"
-priority = 0.5
+#[sitemap]
+#changefreq = "weekly"
+#filename = "sitemap.xml"
+#priority = 0.5
 
 [menu]
 
