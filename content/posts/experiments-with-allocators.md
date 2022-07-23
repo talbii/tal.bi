@@ -5,7 +5,7 @@ title: Experiments with Allocators
 tags: ["programming", "c++"]
 ---
 
-<!-- more -->
+<!--more-->
 
 Recently I've been digging deeper into C++, which is the most complex language I think ever exists today (perhaps except COBOL). Today we will be looking briefly at `std::allocator`.
 
