@@ -70,7 +70,7 @@ which indeed shows the dynamic resizing of `std::vector`.
 
 ## Having Fun
 
-All the allocators mentioned in this post are available at my [GitHub](https://github.com/talbii/allocators). We will focus on one of them - `static_allocator<T, MAX_SIZE>`. As the name suggets, this allocator allows allocating up to `MAX_SIZE` bytes, and no more. Originally I've implemented it as a means to improve performance but unfortunately it turns out C++ is already pretty good at allocating memory (who would've guessed!).
+All the allocators mentioned in this post are available at my [GitHub](https://github.com/talbii/allocators). We will focus on one of them - `static_allocator<T, MAX_SIZE>`. As the name suggests, this allocator allows allocating up to `MAX_SIZE` bytes, and no more. Originally I've implemented it as a means to improve performance but unfortunately it turns out C++ is already pretty good at allocating memory (who would've guessed!).
 
 Still, `static_allocator<T, MAX_SIZE>` *does* reach better performance (almost 2%!). Implementing is simple - we will only allocate:
 
