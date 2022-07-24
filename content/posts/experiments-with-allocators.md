@@ -51,7 +51,7 @@ for(auto _ = 0; _ < 32; _++) vec.push_back(0);
 
 would output:
 
-```
+```shell
 Allocated 1 bytes at 0x600001328030
 Allocated 2 bytes at 0x600001328040
 Deallocating 1 bytes at 0x600001328030
