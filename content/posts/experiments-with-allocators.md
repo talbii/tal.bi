@@ -2,7 +2,7 @@
 author: talbi
 date: 2022-07-23
 title: Experiments with Allocators
-tags: ["programming", "c++"]
+tags: ["programming", "cpp"]
 ---
 
 <!--more-->
