@@ -1,9 +1,9 @@
 ---
-title: "Comments on Python's 3.11 Integer/String Conversion Limits"
-date: 2022-09-18T22:00:00+00:00
+title: "Comments on Python 3.11 Integer/String Conversion Limits"
+date: 2022-09-18
 author: talbi
 math: true
-tags: ["python-3.11", "python", "opinions"]
+tags: ["python-3-11", "python", "opinions"]
 ---
 
 Also why specification and implementation should be separate
