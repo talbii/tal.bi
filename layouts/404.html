@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Oops! </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+    div.main {
+        height: fit-content;
+        width: fit-content;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    p.frown {
+        font-size: 48px;
+        grid-row: 1;
+        padding-bottom: 5px;
+    }
+
+    p.frown, h1.text { margin: 0 auto; }
+</style>
+    </head>
+    <body>
+        <div class="main">
+                <p class="frown"> :( </p>
+                <h1 class="text"> The specified page was not found. </h1>
+                <div style="display: flex; flex-direction: row; gap: 10px">
+                    <a href="/"> Go back home </a>
+                    <a href="." onclick="javascript:window.history.back()"> Return to the previous page </a>
+                </div>
+        </div>
+    </body>
+</html>
