@@ -40,7 +40,15 @@ Finally, using `_BitInt` removes the headache of trying to write true portable c
 
 Currently (December 2022) the only compiler to implement this feature is Clang, and that is only due to an extension in LLVM, previously called `_ExtInt` which did exactly this. So, if one wants to test this feature, use Clang version 15 (or earlier versions, with the directive `#define _BitInt(X) _ExtInt(X)`).
 
-It should be noted that the name `_ExtInt` is now depracted, in favour of the new `_BitInt` type.
+It should be noted that the name `_ExtInt` is now deprecated, in favour of the new `_BitInt` type.
+
+### Clang's Implementation
+
+As Clang (LLVM) is the only compiler currently that implements this feature, we have some room to discuss how this is implemented. 
+
+In LLVM-IR (the LLVM "assembly language") there are several integer types. In fact, there are 16,777,215 types ($2^{24} - 1$). For example, the type `i64` denotes a 64-bit integer. So, compiling a `_BitInt(N)` to the corresponding LLVM-IR type `iN` is quite straightforward. The main difficulty in implementing this feature is (efficiently) implementing arithmetic, but with enough time this can also be solved.
+
+It may be important to note that for regular CPUs, it is safe to assume this implementation is not the most efficient, but that is fine, as this feature is mostly directed at FPGAs. Note that, for example, in my machine a `_BitInt(3)` takes one byte in memory.
 
 ## Some Fun
 
