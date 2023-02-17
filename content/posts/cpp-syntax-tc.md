@@ -1,6 +1,6 @@
 ---
 author: talbi
-date: 2023-02-18
+date: 2023-02-18T00:00:00+02:00
 title: "[C++] is Turing Complete"
 tags: ["cpp", "compilers", "turing"]
 math: true
