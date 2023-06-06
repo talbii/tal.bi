@@ -170,5 +170,5 @@ int main(void) {
 
 Our emulator assumes several things:
 
-1. `int` is sufficient: emulating FRACTRAN is especially difficult, as inputs can grow to extreme sizes. Our emulator uses `int`, without loss of generality. This `int` can be switched with a larger type, such as `long` or use [`_BitInt`](/posts/c23-bitinit). Alas, all programs we write in C++ also use this assumption.
+1. `int` is sufficient: emulating FRACTRAN is especially difficult, as inputs can grow to extreme sizes. Our emulator uses `int`, without loss of generality. This `int` can be switched with a larger type, such as `long` or use [`_BitInt`](/posts/c23-bitint). Alas, all programs we write in C++ also use this assumption.
 2. `fraction::value` can be avoided, albeit at a cost of uglier code.
