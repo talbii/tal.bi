@@ -94,7 +94,9 @@ for (; i < n - 1; i += 2) {
 if (i == n - 1)
     f(i);
 ```
-which is less understandable, but in practice the code above runs for *half as much* loops as before. In implementation of Wilson's algorithm, we are bounded by the number of loops, and by modulo. We already treated the second bound, so how about the first?
+which is less understandable, but in practice the code above runs for *half as much* loops as before. 
+
+The implementation of Wilson's algorithm is bounded by two things: the number of iterations, and the modulo operation per iteration. We already optimized the second bound, so how about the first?
 
 Here is the final optimization of our algorithm:
 
@@ -124,7 +126,7 @@ bool libdivide_unrolled2(std::uint64_t n) {
 }
 ```
 
-And the result?! A **decrease** in performance, when compared to the un-unrolled Libdivide version: $9.3$ seconds compared to $8.9$. This teaches an important lesson: optimizations don't always work! At the end of the day, this algorithm is doomed from the get-go, and no clever optimizations will fix it.
+And the result?! A **decrease** in performance, when compared to the un-unrolled Libdivide version: about $9$ seconds compared to $8.7$. This teaches an important lesson: optimizations don't always work! At the end of the day, this algorithm is doomed from the get-go, and no clever optimizations will fix it.
 
 ---
 
