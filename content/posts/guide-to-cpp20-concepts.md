@@ -1,5 +1,5 @@
 ---
-title: "An Introduction to C++ Concepts using Set Theory (kind-of)"
+title: "An Introduction to C++ Concepts using Set Theory"
 date: 2023-05-09
 author: talbi
 math: true
@@ -207,3 +207,6 @@ Finally, I recommend also reading up on the built-in concepts, in the [`<concept
 As seen, concepts can accept multiple types, **including** duplications. This means that something like `C<T, T>` *is valid*, and should compile (and indeed it does). In that case, how can $U = \mathcal{P}(\mathsf{Type})$, and not $\mathcal{MP}(\mathsf{Type})$ (multiset-powerset)?
 
 Well, as we see later, concepts can be defined inductivelly. This means that we can define the concept `C<T, T>` as `C1<T> = C<T, T>`, thus omitting the need for multisets.
+
+Additionally, concepts need not operate *only* on types, they can also operate on values, in the same ways templates can receive compile-time values. I do not discuss this, but note that this is possible.
+
