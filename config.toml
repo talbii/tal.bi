@@ -24,9 +24,16 @@ utterancesTheme = "github-dark" # optional
 utterancesIssue = "url" # optional
 utterancesLabel = "blog-comments" # optional
 
-#[[params.social]]
-#id = "github"
-#url = "https://github.com/talbii"
+rssAsSocialIcon = true
+
+[[params.social]]
+id = "globe"
+url = "https://www.tal.bi"
+
+[[params.social]]
+id = "github"
+name = "talbii"
+
 
 [sitemap]
 changefreq = "weekly"
