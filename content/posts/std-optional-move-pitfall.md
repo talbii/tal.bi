@@ -34,13 +34,12 @@ While in the example above, that would work *just fine*, this is not something y
 ```c++
 std::optional<T> opt = some_good_oracle<T>(); /* assume opt.has_value() */
 
-opt.has_value(); // true, expected
-
-f1( std::move(opt.value()) ); // move the value, meaning that from 
-                              // here onwards it is not needed
+if (opt.has_value())
+    f1( std::move(opt.value()) ); // move the value to avoid copying
+                                  // from here onwards opt doesn't have a value
 
 if (opt.has_value())  // true, unexpected!
-    f2( std::move(opt.value()) ); // move to save time! 
+    f2( std::move(opt.value()) ); // move again!
                                   // in reality f2 got an empty/garbage T
 ```
 
@@ -51,8 +50,8 @@ It might seem obvious here, but I'm certain that this has bitten some developer 
 The answer to all of your problems is very simple: move *the optional value*, instead of the value itself. If you wish to retrieve the actual value, just do that!
 
 ```c++
-// BAD
-// std::move(opt.value());
+// Bad
+// auto x = std::move(opt.value());
 
 // Good
 auto x = std::move(opt).value();
