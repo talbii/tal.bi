@@ -83,6 +83,8 @@ When running on an Apple M1 Pro, *on average* both functions took the same amoun
 
 In a different test I performed, where the member functions were not `const`, even with optimizations (`-O2`) the results were `47 us` (normal) versus `96 us` (virtual). It is evident that optimizations are not the issue, and virtual function do run slower than normal ones.
 
+My test code is available [here](https://gist.github.com/talbii/5a5f2661ca2271d4812b24d26a6077f1).
+
 ## Well, I have enough cache!
 
 Unfortunately, that is also not enough. In practice, *real world code* is large enough to impose cache locality issues. 
