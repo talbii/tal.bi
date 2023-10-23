@@ -1,6 +1,6 @@
 baseURL = 'https://blog.tal.bi/'
 languageCode = 'en-us'
-title = "Talbi's Blog"
+title = "Ido Talbi's blog"
 theme = "anubis"
 paginate = 10
 enableRobotsTXT = true
