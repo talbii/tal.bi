@@ -7,7 +7,7 @@ tags: ["c", "programming", "list"]
 
 <!--more-->
 
-In the style of "top 5", this post will go over five of my favorite C functions, standard C, POSIX, GNU, and everything in between.
+In the style of "top 5", this post will go over five of my favorite C functions from the standard C, POSIX, GNU, and everything in between.
 
 ## `calloc` (standard C)
 
@@ -32,7 +32,7 @@ struct my_struct *p = calloc(n, sizeof *p);
 /* .. */
 ```
 
-While this difference is *very* subtle, the `calloc` version is actually safer. This is because the product `n * sizeof *p` might overflow, and cause less memory than expected to be allocated. Maybe this is extremely unlikely to happen today, as `sizeof(size_t) == 8` on many computers, but this bug did happen, at least once: in 2002, for [OpenSSH](https://www.cvedetails.com/cve/CVE-2002-0639/)!
+While this difference is *very* subtle, the `calloc` version is actually safer. This is because the product `n * sizeof *p` might overflow, and cause less memory than expected to be allocated. `calloc`, on the other hand, does have a check for this overflow and if detected, no memory will be allocated. Maybe this is extremely unlikely to happen today, as `sizeof(size_t) == 8` on many computers, but this bug did happen, at least once: in 2002, for [OpenSSH](https://www.cvedetails.com/cve/CVE-2002-0639/)!
 
 ## `asprintf` (GNU, BSD)
 
@@ -64,6 +64,8 @@ ssize_t line_size = 0;
 
 while ( (line_size = getline(&buf, &buf_size, fp)) > 0 )
     fwrite(buf, line_size, 1u, stdout);
+
+free(buf);
 ```
 
 ## `arc4random_uniform` (BSD, macOS)
