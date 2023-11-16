@@ -44,7 +44,7 @@ It should be noted that the name `_ExtInt` is now deprecated, in favour of the n
 
 ### Clang's Implementation
 
-As Clang (LLVM) is the only compiler currently that implements this feature, we have some room to discuss how this is implemented. 
+As Clang (LLVM) is the only compiler currently that implements this feature, we have some room to discuss how this is implemented.
 
 In LLVM-IR (the LLVM "assembly language") there are several integer types. In fact, there are 16,777,215 types ($2^{24} - 1$). For example, the type `i64` denotes a 64-bit integer. So, compiling a `_BitInt(N)` to the corresponding LLVM-IR type `iN` is quite straightforward. The main difficulty in implementing this feature is (efficiently) implementing arithmetic, but with enough time this can also be solved.
 
@@ -58,13 +58,10 @@ Since Clang already supports this feature, we can have some fun! Here for exampl
 #define _BitInt(X) _ExtInt(X)
 
 int main(void) {
-    _BitInt (1048576) x = 1 << (1 << 20);
+    _BitInt (1048576) x = ((_BitInt (1048576)) 1) << (1 << 20);
 
     bool is_even = x % 2 == 0;
-    if(is_even)
-        puts("2^(2^20) is even!");
-    else
-        puts("2^(2^20) is odd!");
+    puts( (is_even) ? "2^(2^20) is even!" : "2^(2^20) is odd!" );
 }
 ```
 
@@ -78,3 +75,4 @@ Safe to say my CPU is alright. It might be good to note that the resulting binar
 
 See also: [N2763](https://open-std.org/JTC1/SC22/WG14/www/docs/n2763.pdf), for the official specification.
 
+Update (November 2023): Clang has "officially" implemented `_BitInt`, deprecating `_ExtInt`. Moreover, Clang now limits the size of `_BitInt`-declared integers to 128 bits.
