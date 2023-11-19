@@ -1,5 +1,5 @@
 ---
-title: "An Easy Factoring Problem"
+title: "An Easy Factoring Problem (Factoring Prime Powers)"
 date: 2023-10-21T23:23:46+03:00
 math: true
 tags: ["math", "number-theory"]

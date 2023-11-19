@@ -63,7 +63,7 @@ size_t buf_size = 0;
 ssize_t line_size = 0;
 
 while ( (line_size = getline(&buf, &buf_size, fp)) > 0 )
-    fwrite(buf, line_size, 1u, stdout);
+    if ( fwrite(buf, line_size, 1u, stdout) != line_size ) /* .. */
 
 free(buf);
 ```
