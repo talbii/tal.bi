@@ -1,5 +1,5 @@
 ---
-title: "An Introduction to C++ Concepts using Set Theory"
+title: "An Introduction to C++ Concepts using Math"
 date: 2023-05-09
 author: talbi
 math: true
