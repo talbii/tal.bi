@@ -64,7 +64,7 @@ $$ f_G(x) = \begin{cases}
 
 Thus, for example, being able to compute *any value* of $f_G$ would be equivalent to the Turing machine proving $G$. In other words, any output of an evaluation of $f_G$ at any input would require either proving or disproving $G$.
 
-$f_G$ might perhaps be cheating, as the existence of $G$ is dependent on the machine itself, yet we require the machine in order to construct the function. Instead, let us construct a function in two parts. First, let $g_F : \mathbb{N} \times \mathsf{Stmt}(F) \to \mathbb{N} \\{ \perp \\}$ be defined as:
+$f_G$ might perhaps be cheating, as the existence of $G$ is dependent on the machine itself, yet we require the machine in order to construct the function. Instead, let us construct a function in two parts. First, let $g_F : \mathbb{N} \times \mathsf{Stmt}(F) \to \mathbb{N} \cup \\{ \perp \\}$ be defined as:
 
 $$ g_F(x, \varphi) = \begin{cases}
     x && \varphi \text{ is provable} \\\
