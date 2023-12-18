@@ -3,6 +3,10 @@
     import Navbar from '$lib/Navbar.svelte'
 </script>
 
-<Navbar />
+<header>
+    <Navbar />
+</header>
 
-<slot/>
+<main>
+    <slot/>
+</main>
