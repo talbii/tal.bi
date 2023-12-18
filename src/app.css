@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text: black;
+    --background: gray;
+    --color-hover: snow;
+}
+
+html, body {
+    margin: 5vh 5vw;
+    background-color: var(--background);
+}
+
+a, p, h1, h2, h3, h4, span, nav, li {
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0 auto;
+    color: var(--text);
+    text-decoration: none;
+    text-align: justify;
+    letter-spacing: -0.1px;
+}
+
+@media (min-width: 640px) { 
+    p, h1, h2, h3, h4, span, nav, li {
+        font-size: 1.25rem;
+    }
+}
+
+a {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--color-hover);
+    text-decoration: underline;
+    cursor: pointer;
+}
