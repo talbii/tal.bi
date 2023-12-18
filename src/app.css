@@ -21,7 +21,10 @@ a, p, h1, h2, h3, h4, span, nav, li {
 }
 
 @media (min-width: 640px) { 
-    p, h1, h2, h3, h4, span, nav, li {
+/*    p, h1, h2, h3, h4, span, nav, li {
+        font-size: 1.25rem;
+    } */
+    html {
         font-size: 1.25rem;
     }
 }
