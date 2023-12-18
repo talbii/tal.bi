@@ -14,6 +14,9 @@ const config = {
         vitePreprocess(), 
         mdsvex({ 
             extensions: ['.md'],
+            highlight: {
+                alias: {  "c++" : 'cpp', },
+            },
             remarkPlugins: [remarkMath],
             rehypePlugins: [rehypeKatexSvelte],
         }),
