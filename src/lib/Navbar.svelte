@@ -1,5 +1,6 @@
 <nav> 
-    <h1> Ido Talbi </h1>
+    <a href="/"> <h1> Ido Talbi </h1> </a>
+    <div style="flex: 1;"> </div>
     <div> 
         <a href="/">home</a>
         <a href="/blog">blog</a>
@@ -18,11 +19,11 @@ nav {
     align-items: flex-end;
 }
 
-nav > h1 {
+nav > a {
     font-family: 'Alegreya', serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: inline-block;
-    flex: 1;
+    text-decoration: none;
 }
 
 nav > * a {
