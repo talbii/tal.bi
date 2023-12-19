@@ -7,8 +7,8 @@
     --color-hover: snow;
 }
 
-html, body {
-    margin: 5vh 5vw;
+html {
+    /* margin: 5vh 5vw; */
     background-color: var(--background);
     font-family: 'Source Sans 3', sans-serif;
 }
@@ -26,7 +26,8 @@ a, p, h1, h2, h3, h4, nav, li {
         font-size: 1.25rem;
     } */
     html {
-        font-size: 1.25rem;
+        margin: 4vh 10vw;
+        font-size: 1.2rem;
     }
 }
 
