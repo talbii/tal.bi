@@ -15,7 +15,7 @@ const config = {
         vitePreprocess(), 
         mdsvex({ 
             extensions: ['.md'],
-            layout: 'src/routes/posts/PostLayout.svelte',
+            layout: 'src/lib/PostLayout.svelte',
             highlight: {
                 alias: {  "c++" : 'cpp', },
             },

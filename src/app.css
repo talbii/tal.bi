@@ -45,3 +45,7 @@ a:hover {
 a:hover * {
     color: inherit;
 }
+
+h1.half {
+    font-size: 1.75rem;
+}
