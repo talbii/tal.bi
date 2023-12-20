@@ -1,6 +1,5 @@
 const fetchPosts = async () => {
-//	const allPostFiles = import.meta.glob('/src/routes/blog/*.md');
-	const allPostFiles = import.meta.glob('/src/routes/blog/**/*.md');
+	const allPostFiles = import.meta.glob('/src/routes/posts/**/*.md');
 	const iterablePostFiles = Object.entries(allPostFiles);
 
 	const allPosts = await Promise.all(
@@ -15,11 +14,7 @@ const fetchPosts = async () => {
 		})
 	);
 
-	return allPosts;
+	return { posts: allPosts };
 };
 
-export const load = async () => {
-    console.log("load!");
-//    console.log(await fetchPosts());
-    return { posts: await fetchPosts() }; 
-}
+export const load = fetchPosts;
