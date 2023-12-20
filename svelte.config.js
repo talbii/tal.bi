@@ -1,9 +1,10 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { mdsvex } from 'mdsvex'
+import { mdsvex } from 'mdsvex';
 
-import remarkMath from 'remark-math'
-import rehypeKatexSvelte from 'rehype-katex-svelte'
+import remarkMath from 'remark-math';
+import readingTime from 'mdsvex-reading-time'
+import rehypeKatexSvelte from 'rehype-katex-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -18,7 +19,7 @@ const config = {
             highlight: {
                 alias: {  "c++" : 'cpp', },
             },
-            remarkPlugins: [remarkMath],
+            remarkPlugins: [readingTime, remarkMath],
             rehypePlugins: [rehypeKatexSvelte],
         }),
     ],
