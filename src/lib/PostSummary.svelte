@@ -1,25 +1,21 @@
 <script>
     import { codify, dateify } from '$lib/util.js';
+    import TagList from '$lib/TagList.svelte';
 
     export let path;
     export let meta;
 </script>
 
+<article>
 <div>
     <a href={path}>
         <h1 class="half"> {@html codify(meta.title)} </h1>
     </a>
     <p> {dateify(meta.date)} &centerdot; {meta.readingTime.text} </p>
 
-<!--
-    <ul>
-    {#each meta.tags || [] as tag}
-        <li> #{tag} </li>    
-    {/each}
-</ul>
--->
-
+    <TagList tags={meta.tags} />
 </div>
+</article>
 
 <style>
 div {
@@ -31,7 +27,7 @@ div {
         transparent 99%
         ) 100% 1;*/
     margin: 0 5px;
-    padding: 5px;
+    padding: 7px;
 }
 
     h1 {
@@ -42,16 +38,4 @@ a {
     text-decoration: none;
     }
     a:hover { text-decoration: none; }
-
-ul { 
-    padding: 0;
-    margin: 0;
-    margin-bottom: 5px;
-}
-
-ul li {
-    font-size: 0.9rem;
-    display: inline;
-    padding-right: 3px;
-}
 </style>
