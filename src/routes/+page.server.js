@@ -17,4 +17,18 @@ const fetchPosts = async () => {
 	return { posts: allPosts };
 };
 
-export const load = fetchPosts;
+const strcmp = (s1, s2) => {
+    if (s1 < s2) return -1;
+    if (s1 > s2) return 1;
+    return 0;
+};
+
+export const load = async () => {
+    return fetchPosts().then(x => {
+        let y = x.posts;
+        y.sort((a, b) => strcmp(a.meta.date, b.meta.date))
+         .reverse();
+
+        return { posts: y };
+    });
+};
