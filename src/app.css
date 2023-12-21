@@ -2,22 +2,24 @@
 @import url('./prism-atom-dark.css'); /* TODO */
 
 :root {
-    --text: black;
-    --background: gray;
-    --color-hover: snow;
+    --text: #e5e5e5; /* neutral 200  */
+    --background: #18181b; /* zinc 800 */
+    --color-link: #3b82f6; /* blue 500 */
+    --border-color: #6b7280; /* gray 500 */
+    --color-hover: #dc2626; /* red 600 */
 }
 
 html {
     /* margin: 5vh 5vw; */
     background-color: var(--background);
     font-family: 'Source Sans 3', sans-serif;
+    color: var(--text);
 }
 
 a, p, h1, h2, h3, h4, nav, li {
     margin: 0 auto;
-    color: var(--text);
     text-decoration: none;
-    text-align: justify;
+/*    text-align: justify; */
     letter-spacing: -0.1px;
 }
 
@@ -34,16 +36,13 @@ a, p, h1, h2, h3, h4, nav, li {
 a {
     font-weight: 500;
     text-decoration: underline;
+    color: var(--color-link);
 }
 
 a:hover {
     color: var(--color-hover);
     text-decoration: underline;
     cursor: pointer;
-}
-
-a:hover * {
-    color: inherit;
 }
 
 h1.half {
