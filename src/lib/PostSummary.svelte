@@ -4,14 +4,21 @@
 
     export let path;
     export let meta;
+
+    const make_title = () => {
+        return `<h1 class="half"> ${codify(meta.title)} </h1>`;
+    };
 </script>
 
 <article>
 <div>
-    <a href={path}>
-        <h1 class="half"> {@html codify(meta.title)} </h1>
-    </a>
-    <br>
+    {#if path}
+        <a href={path}>
+            {@html make_title()}
+        </a>
+    {:else}
+        {@html make_title()}
+    {/if}
 
     <p>
         {dateify(meta.date)}
@@ -33,6 +40,7 @@ div {
         transparent 99%
         ) 100% 1;*/
     margin: 0 5px;
+    margin-bottom: 5px;
     padding: 7px;
 }
 

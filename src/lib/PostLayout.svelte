@@ -1,20 +1,25 @@
 <script>
-    import { codify, dateify } from '$lib/util.js';
+    import Metadata from './Metadata.svelte';
+    import PostSummary from './PostSummary.svelte';
 
     export let date;
     export let title;
     export let tags;
+    export let readingTime;
+    export let favorite;
 
     /* ignored yet intentionally defined */
     export let data;
     export let author;
     export let math;
     export let form;
+
+    const meta = { title, date, readingTime, tags, favorite };
 </script>
 
-<p> Post date: {dateify(date)} </p>
-<h1 class="half"> {@html codify(title)} </h1>
-<p> {tags} </p>
+<Metadata {title} />
+
+<PostSummary path={undefined} {meta} />
 
 <article>
     <slot/>
