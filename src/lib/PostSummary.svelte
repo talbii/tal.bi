@@ -10,7 +10,6 @@
     };
 </script>
 
-<article>
 <div>
     {#if path}
         <a href={path}>
@@ -33,7 +32,6 @@
     {/if}
     <TagList tags={meta.tags} />
 </div>
-</article>
 
 <style>
 div {

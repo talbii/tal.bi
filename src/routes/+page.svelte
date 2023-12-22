@@ -7,5 +7,7 @@
 <Metadata />
 
 {#each data.posts as post}
-    <PostSummary path={post.path} meta={post.meta} />
+    <article>
+        <PostSummary path={post.path} meta={post.meta} />
+    </article>
 {/each}

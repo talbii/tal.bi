@@ -19,8 +19,7 @@
 
 <Metadata {title} />
 
-<PostSummary path={undefined} {meta} />
-
 <article>
+    <PostSummary path={undefined} {meta} />
     <slot/>
 </article>
