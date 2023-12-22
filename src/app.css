@@ -10,7 +10,6 @@
 }
 
 html {
-    /* margin: 5vh 5vw; */
     background-color: var(--background);
     font-family: 'Source Sans 3', sans-serif;
     margin: 5px 10px;
@@ -20,14 +19,10 @@ html {
 a, p, h1, h2, h3, h4, nav, li {
     margin: 0 auto;
     text-decoration: none;
-/*    text-align: justify; */
     letter-spacing: -0.1px;
 }
 
 @media (min-width: 640px) { 
-/*    p, h1, h2, h3, h4, span, nav, li {
-        font-size: 1.25rem;
-    } */
     html {
         margin: 4vh min(15em, 15vw);
         font-size: 1.2rem;
