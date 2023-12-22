@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-hover);
+    color: var(--color-link);
 }
 
 nav > div {
