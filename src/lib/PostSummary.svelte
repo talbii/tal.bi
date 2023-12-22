@@ -52,9 +52,12 @@ h1, p, a {
 a {
     color: inherit;
     text-decoration: none;
+    display: block;
+    margin: 0;
+    width: fit-content;
 }
 
-a:hover * {
+a:hover {
     color: inherit;
     text-decoration: underline;
 }
