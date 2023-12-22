@@ -25,7 +25,7 @@
 
 <style>
 div {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border-color);
     /*    border-image: linear-gradient(
         to right,
         transparent 1%,
@@ -36,12 +36,18 @@ div {
     padding: 7px;
 }
 
-    h1 {
-        display: inline-block;
+h1, p, a {
+    display: inline-block;
+    text-align: unset;
 }
 
 a {
+    color: inherit;
     text-decoration: none;
-    }
-    a:hover { text-decoration: none; }
+}
+
+a:hover * {
+    color: inherit;
+    text-decoration: underline;
+}
 </style>
