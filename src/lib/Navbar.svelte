@@ -3,8 +3,8 @@
     <div style="flex: 1;"> </div>
     <div> 
         <a href="/">home</a>
-        <a href="/blog">blog</a>
-        <a href="/contact.html">contact</a>
+        <a href="/about">about</a>
+        <a href="/socials">socials</a>
     </div>
 </nav>
 
