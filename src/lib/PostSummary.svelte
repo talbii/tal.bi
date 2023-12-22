@@ -11,7 +11,13 @@
     <a href={path}>
         <h1 class="half"> {@html codify(meta.title)} </h1>
     </a>
-    <p> {dateify(meta.date)} &centerdot; {meta.readingTime.text} </p>
+    <br>
+
+    <p>
+        {dateify(meta.date)}
+        &centerdot;
+        {meta.readingTime.text}
+    </p>
 
     <TagList tags={meta.tags} />
 </div>
