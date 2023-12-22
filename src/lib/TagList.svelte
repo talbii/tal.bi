@@ -4,7 +4,7 @@
 
 <ul>
 {#each tags || [] as tag}
-    <li> #{tag} </li> 
+    <li> {tag} </li>
 {/each}
 </ul>
 
@@ -17,6 +17,9 @@ ul {
 ul li {
     font-size: 0.8rem;
     display: inline;
-    padding-right: 3px;
+    margin-right: 5px;
+    padding: 1px 3px;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
 }
 </style>
