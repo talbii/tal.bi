@@ -26,6 +26,11 @@
         {meta.readingTime.text}
     </p>
 
+    <br>
+
+    {#if meta.favorite}
+        <p style="display: inline; "> favorite </p>
+    {/if}
     <TagList tags={meta.tags} />
 </div>
 </article>

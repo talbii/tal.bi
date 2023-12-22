@@ -10,6 +10,7 @@
 
 <style>
 ul { 
+    display: inline;
     padding: 0;
     margin: 0;
 }
