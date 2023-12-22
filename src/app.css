@@ -28,7 +28,7 @@ a, p, h1, h2, h3, h4, nav, li {
         font-size: 1.25rem;
     } */
     html {
-        margin: 4vh 10vw;
+        margin: 4vh 15em;
         font-size: 1.2rem;
     }
 }
