@@ -4,7 +4,6 @@
     <div> 
         <a href="/">home</a>
         <a href="/about">about</a>
-        <a href="/socials">socials</a>
     </div>
 </nav>
 
