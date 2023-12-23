@@ -1,5 +1,8 @@
 <script>
     import Metadata from "$src/lib/Metadata.svelte";
+    import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome'
+    import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+    import { faGithub } from '@fortawesome/free-brands-svg-icons';
 </script>
 
 <Metadata title={'About'}/>
@@ -13,8 +16,8 @@
 
     <p> You can reach me in the following ways: </p>
     <ul>
-        <li> Mail icon <a href="mailto:contact@tal.bi"> contact@tal.bi </a></li>
-        <li> Github icon <a href="https://github.com/talbii"> talbii </a> </li>
+        <li> <span> <FontAwesomeIcon icon={faEnvelope} /> </span> <a href="mailto:contact@tal.bi"> contact@tal.bi </a></li>
+        <li> <span> <FontAwesomeIcon icon={faGithub} /> </span> <a href="https://github.com/talbii"> talbii </a> </li>
     </ul>
 
 </div>
@@ -28,6 +31,16 @@
 
     div * {
         margin: 0;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0 5px;
+        padding: 0;
+    }
+
+    span {
+        vertical-align: middle;
     }
 </style>
 

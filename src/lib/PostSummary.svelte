@@ -1,6 +1,8 @@
 <script>
     import { codify, time_ago } from '$lib/util.js';
     import TagList from '$lib/TagList.svelte';
+    import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome'
+    import { faStar } from '@fortawesome/free-regular-svg-icons';
 
     export let path;
     export let meta;
@@ -26,7 +28,9 @@
     <br>
 
     {#if meta.favorite}
-        <p style="display: inline; "> favorite </p>
+        <span style="vertical-align: middle;">
+            <FontAwesomeIcon icon={faStar} />
+        </span>
     {/if}
     <TagList tags={meta.tags} />
 </div>
