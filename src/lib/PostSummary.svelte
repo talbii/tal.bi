@@ -5,18 +5,16 @@
     export let path;
     export let meta;
 
-    const make_title = () => {
-        return `<h1 class="half"> ${codify(meta.title)} </h1>`;
-    };
+    const title = codify(meta.title);
 </script>
 
 <div>
     {#if path}
         <a href={path}>
-            {@html make_title()}
+            <h1 class="half"> {@html title} </h1>
         </a>
     {:else}
-        {@html make_title()}
+        <h1 class="half"> {@html title} </h1>
     {/if}
 
     <p>
@@ -60,7 +58,7 @@ a {
     width: fit-content;
 }
 
-a:hover {
+a:hover h1 {
     color: inherit;
     text-decoration: underline;
 }
