@@ -45,9 +45,12 @@ div {
     padding: 7px;
 }
 
-h1, p, a {
-    display: inline-block;
-    text-align: unset;
+h1 {
+    display: block;
+}
+
+p {
+    display: inline;
 }
 
 a {
