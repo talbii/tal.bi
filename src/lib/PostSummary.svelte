@@ -1,5 +1,5 @@
 <script>
-    import { codify, dateify } from '$lib/util.js';
+    import { codify, time_ago } from '$lib/util.js';
     import TagList from '$lib/TagList.svelte';
 
     export let path;
@@ -18,7 +18,7 @@
     {/if}
 
     <p>
-        {dateify(meta.date)}
+        {meta.date}
         &centerdot;
         {meta.readingTime.text}
     </p>

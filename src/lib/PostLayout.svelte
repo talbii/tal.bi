@@ -1,6 +1,7 @@
 <script>
     import Metadata from './Metadata.svelte';
     import PostSummary from './PostSummary.svelte';
+    import { dateify } from './util';
 
     export let date;
     export let title;
@@ -14,7 +15,7 @@
     export let math;
     export let form;
 
-    const meta = { title, date, readingTime, tags, favorite };
+    const meta = { title, 'date': dateify(date), readingTime, tags, favorite };
 </script>
 
 <Metadata {title} />
