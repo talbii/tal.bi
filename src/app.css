@@ -51,3 +51,7 @@ a:hover {
 h1.half {
     font-size: 1.75em;
 }
+
+svg {
+    height: 1em;
+}
