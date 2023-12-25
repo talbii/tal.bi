@@ -1,3 +1,7 @@
+<script>
+    import '@fontsource-variable/alegreya';
+</script>
+
 <nav> 
     <a class='head-a' href="/"> <h1> Ido Talbi </h1> </a>
     <div style="flex: 1;"> </div>
@@ -25,7 +29,7 @@ a {
 }
 
 .head-a {
-    font-family: 'Alegreya', serif;
+    font-family: 'Alegreya Variable', serif;
     font-size: 1.8rem;
     line-height: 1;
 }
