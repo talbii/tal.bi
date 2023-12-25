@@ -7,13 +7,7 @@
     export let title;
     export let tags;
     export let readingTime;
-    export let favorite;
-
-    /* ignored yet intentionally defined */
-    export let data;
-    export let author;
-    export let math;
-    export let form;
+    export let favorite = undefined;
 
     const meta = { title, 'date': dateify(date), readingTime, tags, favorite };
 </script>
