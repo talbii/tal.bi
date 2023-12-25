@@ -28,7 +28,7 @@
     <br>
 
     {#if meta.favorite}
-        <span style="vertical-align: middle;">
+        <span style="vertical-align: sub;">
             <FontAwesomeIcon icon={faStar} />
         </span>
     {/if}
