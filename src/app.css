@@ -16,6 +16,8 @@ html {
 
 body {
     font-family: 'Source Sans 3 Variable', sans-serif;
+    max-width: 48rem;
+    margin: auto;
 }
 
 a, p, h1, h2, h3, h4, nav, li {
@@ -31,8 +33,11 @@ code {
 
 @media (min-width: 640px) { 
     html {
-        padding: 4vh 20vw;
         font-size: 1.35rem;
+    }
+
+    body {
+        padding: 4vh 20vw;
     }
 }
 
