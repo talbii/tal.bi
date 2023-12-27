@@ -24,7 +24,7 @@
         data-category-id="DIC_kwDOGJvens4Cb9Vy"
         data-mapping="specific"
         data-term={title}
-        data-strict="1"
+        data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="1"
         data-input-position="top"
