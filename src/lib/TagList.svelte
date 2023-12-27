@@ -4,7 +4,7 @@
 
 <ul>
 {#each tags || [] as tag}
-    <li> {tag} </li>
+    <li>{tag}</li>
 {/each}
 </ul>
 
