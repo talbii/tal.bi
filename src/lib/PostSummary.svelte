@@ -35,9 +35,11 @@
     <TagList tags={meta.tags} />
 </div>
 
+<hr />
+
 <style>
 div {
-    border-bottom: 1px solid var(--border-color);
+    /* border-bottom: 1px solid var(--border-color); */
     /*    border-image: linear-gradient(
         to right,
         transparent 1%,
@@ -45,12 +47,13 @@ div {
         transparent 99%
         ) 100% 1;*/
     margin: 0 5px;
-    margin-bottom: 5px;
+    /*    margin-bottom: 5px; */
     padding: 7px;
 }
 
 h1 {
     display: block;
+    line-height: 1;
 }
 
 p {
@@ -68,5 +71,10 @@ a {
 a:hover h1 {
     color: inherit;
     text-decoration: underline;
+    }
+
+hr {
+    margin: 5px 0;
+    color: var(--border-color);
 }
 </style>

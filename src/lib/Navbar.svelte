@@ -26,6 +26,10 @@ a {
     display: inline-block;
     text-decoration: none;
     color: unset;
+    }
+
+h1 {
+    line-height: 1;
 }
 
 .head-a {
