@@ -173,5 +173,5 @@ libdivide+unroll2:
       Max: 9.07358s
 ```
 
-Code is available [here](wil.cpp). Code was complied using Clang, with the `-O2` flag. I used my library, [`bench.hpp`](https://github.com/talbii/bench.hpp) which performs several trials and averages the result. I used $N = 5$ trials, with the input $n = 2^{31} - 1$.
+Code is available [here](https://gist.github.com/talbii/229fad2e8c39ef07f89344a479b9b424). Code was complied using Clang, with the `-O2` flag. I used my library, [`bench.hpp`](https://github.com/talbii/bench.hpp) which performs several trials and averages the result. I used $N = 5$ trials, with the input $n = 2^{31} - 1$.
 
