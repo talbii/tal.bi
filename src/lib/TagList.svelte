@@ -1,9 +1,11 @@
 <script>
     export let tags;
+
+    const tags_ = (tags || []).sort();
 </script>
 
 <ul>
-{#each tags || [] as tag}
+{#each tags_ as tag}
     <li>{tag}</li>
 {/each}
 </ul>
