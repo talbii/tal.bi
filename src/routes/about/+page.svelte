@@ -10,7 +10,7 @@
 <div>
     <p> Hello! I'm <em>Ido</em>. I have completed a Bachelor's in computer science in the year 2023, and I am an Etgar alumnus at University of Haifa. </p>
     <p> Main intrests are in the mathematics and theoretical computer science realms. <i>Currently</i>, these include number theory, group theory, compiler optimization, complexity, and graph theory. </p>
-    <p> My <a href="/"> blog </a> (originally hosted at <u>blog.tal.bi</u>) discusses said topics, giving new or interesting insights. </p>
+    <p> My <a href="/"> blog </a> (originally hosted at <u>blog.tal.bi</u>) discusses said topics (and more!), giving new or interesting insights. </p>
 
     <br>
 
