@@ -1,4 +1,4 @@
-@import url('./prism-atom-dark.css'); /* TODO */
+@import url('/prism-theme.css');
 
 :root {
     --text: #e5e5e5; /* neutral 200  */
