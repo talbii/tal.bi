@@ -8,11 +8,12 @@
     export let tags;
     export let readingTime;
     export let favorite = undefined;
+    export let description = undefined;
 
     const meta = { title, 'date': dateify(date), readingTime, tags, favorite };
 </script>
 
-<Metadata {title} />
+<Metadata {title} {description} />
 
 <article>
     <PostSummary path={undefined} {meta} />
