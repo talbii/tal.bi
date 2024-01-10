@@ -68,3 +68,11 @@ h1.half {
 svg {
     height: 1em;
 }
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid var(--border-color);
+    padding: 0;
+}

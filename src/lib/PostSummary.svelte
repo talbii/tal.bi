@@ -72,9 +72,4 @@ a:hover h1 {
     color: inherit;
     text-decoration: underline;
     }
-
-hr {
-    margin: 5px 0;
-    color: var(--border-color);
-}
 </style>
