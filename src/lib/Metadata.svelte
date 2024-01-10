@@ -9,7 +9,7 @@
 
 <svelte:head>
     <title> {title_} Ido Talbi </title>
-    <meta name="description" content="Ido Talbi's website. {description_}">
+    <meta name="description" content={description_ || "Ido Talbi's website."}>
 </svelte:head>
 
 
