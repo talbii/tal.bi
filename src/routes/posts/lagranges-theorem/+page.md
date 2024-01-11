@@ -5,7 +5,7 @@ date: 2024-01-10T00:33:32+0200
 tags: ['math', 'done-quick', 'group-theory']
 ---
 
-Lagrange's theorem is a relatively simple and powerful theorem. In its core, it says that the order of any subgroup divides the order of the original group. More specifically, it even gives us the quotient.
+Lagrange's theorem is a relatively simple and powerful theorem. In its core, it says that the order of any subgroup divides the order of the original group. In fact, Lagrange also specifies the exact value of the quotient.
 
 > **Theorem.** (*Lagrange*) Given a group $G$ and a subgroup $S \le G$, denote with $[G:S]$ the number of cosets of $S$ in $G$. Then $\left\lvert G \right\rvert = [G:S] \cdot \left\lvert S \right\rvert$.
 
@@ -28,7 +28,7 @@ Notice also that this proof works for infinite sets of cosets (simply, replace a
 
 ---
 
-From this point, when refering to cosets we mean right cosets, although the statements are also true for left cosets.
+From this point, when referring to cosets we mean right cosets, although the statements are also true for left cosets.
 
 ## Cosets are either disjoint or equal
 
@@ -69,7 +69,7 @@ In particular, this is true for all cosets, and thus all cosets have the same si
 
 Finally, we are ready to prove Lagrange's theorem.
 
-Given $S \le G$, denote with $k = [G:S]$ the number of cosets (this quantity is also referred as the *index of $S$*). Because the cosets of $S$ partition $G$, then $G = S{a_1} \cup S{a_2} \cup \ldots \cup S{a_k}$ for some elements $a_1, \ldots, a_k$. Moreover, because cosets are disjoint, then this is actually a disjoint union. Therefore, $\left\lvert G \right \rvert = \sum_{1 \le i \le k} \left\lvert S {a_i} \right \rvert$. Finally, because $\left\lvert S {a_i} \right\rvert = \left\lvert S \right\rvert$, we have:
+Given $S \le G$, denote with $k = [G:S]$ the number of cosets (this number is also referred as the *index of $S$*). Because the cosets of $S$ partition $G$, then $G = S{a_1} \cup S{a_2} \cup \ldots \cup S{a_k}$ for some elements $a_1, \ldots, a_k$. Moreover, because cosets are disjoint, then this is actually a disjoint union. Therefore, $\left\lvert G \right \rvert = \sum_{1 \le i \le k} \left\lvert S {a_i} \right \rvert$. Finally, because $\left\lvert S {a_i} \right\rvert = \left\lvert S \right\rvert$, we have:
 
 $$
  \begin{aligned}
