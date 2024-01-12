@@ -23,7 +23,7 @@ dir="$root/src/routes/posts/$1"
 mkdir -p $dir
 filepath="$dir/+page.md"
 
-echo "---\ndate:$(date +"%Y-%m-%dT%H:%M:%S%z")\n---\n" > $filepath 
+echo "---\ndate: $(date +"%Y-%m-%dT%H:%M:%S%z")\n---\n" > $filepath 
 
 if [[ -n $EDITOR ]]; then
     $EDITOR $filepath 
