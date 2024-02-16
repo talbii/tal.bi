@@ -1,4 +1,5 @@
 @import url('/prism-theme.css');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
     --text: #e5e5e5; /* neutral 200  */
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-    font-family: 'Source Sans 3 Variable', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     max-width: 48rem;
     margin: auto;
 }
@@ -29,7 +30,7 @@ a, p, h1, h2, h3, h4, nav, li {
 }
 
 code {
-    font-family: 'Source Code Pro Variable', monospace !important;
+    font-family: 'Source Code Pro', monospace !important;
 }
 
 @media (min-width: 640px) { 

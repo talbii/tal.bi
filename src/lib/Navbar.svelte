@@ -29,7 +29,7 @@ h1 {
 }
 
 .head-a {
-    font-family: "Source Sans 3 Variable", serif;
+    font-family: "Source Sans 3", serif;
     font-weight: 700;
     font-size: 2em;
     line-height: 1;

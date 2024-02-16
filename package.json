@@ -31,8 +31,5 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource-variable/alegreya": "^5.0.9",
-		"@fontsource-variable/source-code-pro": "^5.0.17",
-		"@fontsource-variable/source-sans-3": "^5.0.19"
 	}
 }
