@@ -9,7 +9,8 @@
 #
 
 if [[ $# -ne 1 ]]; then
-    echo "I expect exactly one argument!"
+    echo 'Usage: mkpost [title]'
+    echo ' creates a new +page.md file at /posts/[title]. if $EDITOR is defined, also open the file for editing.'
     exit 1
 fi
 
@@ -23,7 +24,13 @@ dir="$root/src/routes/posts/$1"
 mkdir -p $dir
 filepath="$dir/+page.md"
 
-echo "---\ndate: $(date +"%Y-%m-%dT%H:%M:%S%z")\n---\n" > $filepath 
+cat > $filepath <<- EOF
+---
+title: "$1"
+date: $(date +"%Y-%m-%dT%H:%M:%S%z")
+tags: []
+---
+EOF
 
 if [[ -n $EDITOR ]]; then
     $EDITOR $filepath 
