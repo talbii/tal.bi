@@ -223,6 +223,7 @@ void* __any_caster(const any* __any)
     }
 
     return nullptr;
+}
 ```
 
 comments mine. Code is from libstdc++ and is available [here](https://github.com/gcc-mirror/gcc/blob/3d287bff14885598c75c1cb16b08e0ba4ba05bce/libstdc%2B%2B-v3/include/std/any#L523). For completion, the libcxx implementation
