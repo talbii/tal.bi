@@ -26,12 +26,12 @@ returned by `typeid`, is of type `std::type_info`, and it also has an `operator=
 The usage of `dynamic_cast<>` requires RTTI as its implementation is quite straightforward:
 
 ```c++
-template<typename T, typename U>
-auto my_dynamic_cast(U* ptr) -> T* {
-    if (typeid(*ptr) != typeid(U)) 
+template<typename To, typename From>
+auto my_dynamic_cast(From* ptr) -> To* {
+    if (typeid(*ptr) != typeid(To)) 
         return nullptr;
 
-    return reinterpret_cast<U*>(ptr);
+    return reinterpret_cast<From*>(ptr);
 }
 ```
 
