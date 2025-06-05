@@ -31,7 +31,7 @@ auto my_dynamic_cast(From* ptr) -> To* {
     if (typeid(*ptr) != typeid(To)) 
         return nullptr;
 
-    return reinterpret_cast<From*>(ptr);
+    return reinterpret_cast<To*>(ptr);
 }
 ```
 
